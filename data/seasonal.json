@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "principle": "Seasonal layer changes; Hawaiian culture and respect for ʻāina remain year-round.",
+  "months": {
+    "10": {
+      "label": "OʻAHU OCTOBER",
+      "headline": "Island Halloween + Hawaiʻi culture",
+      "theme": "halloween",
+      "event_label": "Halloween & October Events"
+    },
+    "11": {
+      "label": "OʻAHU NOVEMBER",
+      "headline": "Island holidays + Hawaiʻi culture",
+      "theme": "holidays",
+      "event_label": "Holiday Events & Markets"
+    },
+    "12": {
+      "label": "OʻAHU DECEMBER",
+      "headline": "Island holidays + Hawaiʻi culture",
+      "theme": "holidays",
+      "event_label": "Holiday Events & Markets"
+    }
+  },
+  "default": {
+    "label": "OʻAHU NOW",
+    "headline": "Island life + Hawaiʻi culture",
+    "theme": "island",
+    "event_label": "Seasonal & Local Events"
+  }
+}
