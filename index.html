@@ -157,25 +157,23 @@ body.halloween-mode .season-bar:after{content:none}
     const target=document.getElementById(id);
     if(!main || !target) return;
     main.classList.add('focus-mode');
-    main.querySelectorAll('.focus-hidden,.focus-visible').forEach(el=>{
-      el.classList.remove('focus-hidden','focus-visible');
-    });
 
-    // Hide every top-level content section.
-    [...main.children].forEach(el=>el.classList.add('focus-hidden'));
+    // Hard-hide every main section so only the requested section remains.
+    [...main.children].forEach(el=>el.style.setProperty('display','none','important'));
 
-    // If the requested section lives inside the three-column content area,
-    // hide the other columns and show only the requested panel.
     const columns=target.closest('.columns');
     if(columns){
-      columns.classList.remove('focus-hidden');
-      [...columns.children].forEach(el=>el.classList.add('focus-hidden'));
-      target.classList.remove('focus-hidden');
-      target.classList.add('focus-visible');
-      columns.classList.add('focus-visible');
+      columns.style.setProperty('display','block','important');
+      [...columns.children].forEach(el=>el.style.setProperty('display','none','important'));
+      target.style.setProperty('display','block','important');
+      target.style.setProperty('width','100%','important');
+      target.style.setProperty('max-width','1100px','important');
+      target.style.setProperty('margin','0 auto','important');
     }else{
-      target.classList.remove('focus-hidden');
-      target.classList.add('focus-visible');
+      target.style.setProperty('display','block','important');
+      target.style.setProperty('width','100%','important');
+      target.style.setProperty('max-width','1100px','important');
+      target.style.setProperty('margin','0 auto','important');
     }
 
     target.scrollIntoView({behavior:'smooth',block:'start'});
@@ -191,7 +189,12 @@ body.halloween-mode .season-bar:after{content:none}
   function showAll(){
     if(!main) return;
     main.classList.remove('focus-mode');
-    [...main.querySelectorAll('[style]')].forEach(el=>el.style.removeProperty('display'));
+    main.querySelectorAll('[style]').forEach(el=>{
+      el.style.removeProperty('display');
+      el.style.removeProperty('width');
+      el.style.removeProperty('max-width');
+      el.style.removeProperty('margin');
+    });
     if(focusReset){focusReset.remove();focusReset=null;}
     history.replaceState(null,'',location.pathname+location.search);
     window.scrollTo({top:0,behavior:'smooth'});
