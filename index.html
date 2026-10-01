@@ -48,6 +48,14 @@ body.halloween-mode .season-bar:after{content:'🎃  👻  🌺  👻  🎃';pos
    title.textContent='Holiday season, island style. 🎄🌺';
    text.textContent='Find holiday markets, lights, music, local food and community events—while keeping Hawaiian culture, ʻāina and community at the center of the experience.';
    button.textContent='See Holiday Events →';
+ } else if(m===9 || m===10){
+   bar.classList.add('season-halloween');
+   document.body.classList.add('halloween-mode');
+   label.textContent='🎃 OʻAHU HALLOWEEN';
+   headline.textContent='Spooky season + Hawaiʻi culture';
+   title.textContent='Halloween on Oʻahu, island style. 🎃🌺';
+   text.textContent='Find Halloween events, evening markets, live music and nightlife—while keeping Hawaiian culture, ʻāina and community at the center of the experience.';
+   button.textContent='See Halloween Events →';
  } else {
    bar.classList.add('season-standard');
    label.textContent='🌺 OʻAHU NOW';
