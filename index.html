@@ -30,9 +30,7 @@ footer{background:#062d43;color:#cce0e8;padding:30px 0}.foot{display:flex;justif
 (function(){
  const m=new Date().getMonth()+1;
  const bar=document.getElementById('seasonBar'),label=document.getElementById('seasonLabel'),headline=document.getElementById('seasonHeadline'),title=document.getElementById('seasonTitle'),text=document.getElementById('seasonText'),button=document.getElementById('seasonButton');
- if(m===10){
-   document.body.classList.add('season-halloween');
- } else if(m===11 || m===12){
+ if(m===11 || m===12){
    bar.classList.add('season-holidays');
    label.textContent='🎄 OʻAHU HOLIDAY SEASON';
    headline.textContent='Island holidays + Hawaiʻi culture';
@@ -66,8 +64,7 @@ footer{background:#062d43;color:#cce0e8;padding:30px 0}.foot{display:flex;justif
  else title.textContent="Plan your evening";
  const m=new Date().getMonth()+1;
  const seasonal=document.getElementById('seasonEventLabel');
- if(m===10) seasonal.textContent="Halloween & October Events";
- else if(m===11||m===12) seasonal.textContent="Holiday Events & Markets";
+ if(m===11||m===12) seasonal.textContent="Holiday Events & Markets";
  else seasonal.textContent="Seasonal & Local Events";
  document.getElementById('eventValue').textContent="Live feed soon";
 })();
