@@ -98,8 +98,15 @@ body.halloween-mode .season-bar:after{content:'🎃  👻  🌺  👻  🎃';pos
   const plannerInterest=document.querySelector('#planner select:nth-of-type(3)');
   const plannerStatus=document.getElementById('plannerStatus');
   const buildDayButton=document.getElementById('buildDayButton');
+  const startSelect=document.querySelector('#planner select:nth-of-type(1)');
+  const timeSelect=document.querySelector('#planner select:nth-of-type(2)');
   if(buildDayButton) buildDayButton.addEventListener('click',()=>{
-    if(plannerStatus) plannerStatus.textContent='ELARA has your choices. Review the starting area, time and interest above; the live route/map layer will be used when connected.';
+    if(plannerStatus){
+      const start=startSelect?.value||'your starting area';
+      const time=timeSelect?.value||'your available time';
+      const interest=plannerInterest?.value||'your interests';
+      plannerStatus.textContent='ELARA draft: '+time+' from '+start+' focused on '+interest+'. The live map/data layer can turn this into a route when connected.';
+    }
     document.getElementById('planner')?.scrollIntoView({behavior:'smooth',block:'center'});
   });
   const mapActions=document.querySelectorAll('[data-map-action]');
@@ -107,7 +114,7 @@ body.halloween-mode .season-bar:after{content:'🎃  👻  🌺  👻  🎃';pos
 
   function chooseInterest(value){
     if(plannerInterest){
-      const map={near:'Near me',beaches:'Beaches',hikes:'Nature & hikes',food:'Food & nightlife',events:'Halloween events',free:'Free things',culture:'Culture & history'};
+      const map={near:'Starting area',beaches:'Beaches & ocean',hikes:'Nature & hikes',food:'Food & nightlife',events:'🎃 Halloween events',free:'Free things',culture:'Culture & history',family:'👨‍👩‍👧‍👦 Keiki & ʻohana'};
       const desired=map[value];
       [...plannerInterest.options].forEach(o=>{if(o.textContent.trim()===desired) plannerInterest.value=o.value;});
     }
@@ -135,12 +142,13 @@ body.halloween-mode .season-bar:after{content:'🎃  👻  🌺  👻  🎃';pos
 
   interestButtons.forEach(btn=>btn.addEventListener('click',()=>chooseInterest(btn.dataset.interest)));
 
-  document.querySelectorAll('.halloween-cards a').forEach(card=>card.addEventListener('click',()=>{
+  document.querySelectorAll('.halloween-cards a').forEach(card=>card.addEventListener('click',(event)=>{ event.preventDefault();
     const text=card.querySelector('b')?.textContent||'';
     if(text.includes('Keiki')) chooseInterest('events');
     else if(text.includes('After Dark')) chooseInterest('food');
     else if(text.includes('Moʻolelo')) chooseInterest('culture');
     else if(text.includes('Day + Night')) chooseInterest('beaches');
+    else if(text.includes('Keiki')) chooseInterest('family');
   }));
 })();
 </script></body></html>
