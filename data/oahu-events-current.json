@@ -1,0 +1,55 @@
+{
+  "as_of_hawaii": "2026-11-02",
+  "updated_utc": "2026-11-02T00:00:00Z",
+  "source_type": "curated organizer-linked dates; not a live event API",
+  "events": [
+    {
+      "title": "Hawaiʻi International Film Festival — Kapolei",
+      "start": "2026-11-03",
+      "end": "2026-11-05",
+      "location": "Kapolei",
+      "url": "https://hiff.org/",
+      "icon": "🎬"
+    },
+    {
+      "title": "Hawaiʻi Food & Wine Festival",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "location": "Oʻahu",
+      "url": "https://hawaiifoodandwinefestival.com/",
+      "icon": "🍴"
+    },
+    {
+      "title": "Makahiki Festival at Waimea Valley",
+      "start": "2026-11-11",
+      "end": "2026-11-11",
+      "location": "Waimea Valley",
+      "url": "https://www.waimeavalley.net/",
+      "icon": "🌺"
+    },
+    {
+      "title": "King Kalākaua Birthday Celebration",
+      "start": "2026-11-16",
+      "end": "2026-11-16",
+      "location": "ʻIolani Palace",
+      "url": "https://www.iolanipalace.org/events/",
+      "icon": "👑"
+    },
+    {
+      "title": "Mayor’s Craft & Country Fair",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "location": "Neal S. Blaisdell Exhibition Hall",
+      "url": "https://honolulu.gov/parks",
+      "icon": "🛍️"
+    },
+    {
+      "title": "Kapolei City Lights Opening Night",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "location": "Kapolei Hale",
+      "url": "https://honolulu.gov/parks",
+      "icon": "🎄"
+    }
+  ]
+}
