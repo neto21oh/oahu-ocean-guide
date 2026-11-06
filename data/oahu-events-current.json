@@ -1,16 +1,8 @@
 {
-  "as_of_hawaii": "2026-11-05",
-  "updated_utc": "2026-11-05T22:40:59.653811+00:00",
+  "as_of_hawaii": "2026-11-06",
+  "updated_utc": "2026-11-06T22:08:23.361006+00:00",
   "source_type": "curated official/organizer links, not a live API",
   "events": [
-    {
-      "title": "Hawaiʻi International Film Festival — Kapolei",
-      "start": "2026-11-03",
-      "end": "2026-11-05",
-      "location": "Kapolei",
-      "url": "https://hiff.org/",
-      "icon": "🎬"
-    },
     {
       "title": "Hawaiʻi Food & Wine Festival",
       "start": "2026-11-05",
