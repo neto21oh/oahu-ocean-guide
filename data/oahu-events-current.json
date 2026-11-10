@@ -1,16 +1,8 @@
 {
-  "as_of_hawaii": "2026-11-08",
-  "updated_utc": "2026-11-08T21:12:04.448919+00:00",
+  "as_of_hawaii": "2026-11-09",
+  "updated_utc": "2026-11-10T00:42:38.652190+00:00",
   "source_type": "curated official/organizer links, not a live API",
   "events": [
-    {
-      "title": "Hawaiʻi Food & Wine Festival",
-      "start": "2026-11-05",
-      "end": "2026-11-08",
-      "location": "Oʻahu",
-      "url": "https://hawaiifoodandwinefestival.com/",
-      "icon": "🍴"
-    },
     {
       "title": "Makahiki Festival at Waimea Valley",
       "start": "2026-11-11",
