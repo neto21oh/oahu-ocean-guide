@@ -1,16 +1,8 @@
 {
-  "as_of_hawaii": "2026-11-11",
-  "updated_utc": "2026-11-11T23:28:59.614067+00:00",
+  "as_of_hawaii": "2026-11-12",
+  "updated_utc": "2026-11-12T22:44:46.359602+00:00",
   "source_type": "curated official/organizer links, not a live API",
   "events": [
-    {
-      "title": "Makahiki Festival at Waimea Valley",
-      "start": "2026-11-11",
-      "end": "2026-11-11",
-      "location": "Waimea Valley",
-      "url": "https://www.waimeavalley.net/",
-      "icon": "🌺"
-    },
     {
       "title": "King Kalākaua Birthday Celebration",
       "start": "2026-11-16",
