@@ -1,16 +1,8 @@
 {
-  "as_of_hawaii": "2026-11-16",
-  "updated_utc": "2026-11-17T00:49:57.094245+00:00",
+  "as_of_hawaii": "2026-11-17",
+  "updated_utc": "2026-11-17T23:51:08.146252+00:00",
   "source_type": "curated official/organizer links, not a live API",
   "events": [
-    {
-      "title": "King Kalākaua Birthday Celebration",
-      "start": "2026-11-16",
-      "end": "2026-11-16",
-      "location": "ʻIolani Palace",
-      "url": "https://www.iolanipalace.org/events/",
-      "icon": "👑"
-    },
     {
       "title": "Mayor’s Craft & Country Fair",
       "start": "2026-11-21",
