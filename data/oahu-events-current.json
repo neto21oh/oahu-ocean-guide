@@ -1,16 +1,8 @@
 {
-  "as_of_hawaii": "2026-11-21",
-  "updated_utc": "2026-11-21T22:11:43.922896+00:00",
+  "as_of_hawaii": "2026-11-22",
+  "updated_utc": "2026-11-22T22:29:15.512699+00:00",
   "source_type": "curated official/organizer links, not a live API",
   "events": [
-    {
-      "title": "Mayor’s Craft & Country Fair",
-      "start": "2026-11-21",
-      "end": "2026-11-21",
-      "location": "Neal S. Blaisdell Exhibition Hall",
-      "url": "https://honolulu.gov/parks",
-      "icon": "🛍️"
-    },
     {
       "title": "Kapolei City Lights Opening Night",
       "start": "2026-11-28",
